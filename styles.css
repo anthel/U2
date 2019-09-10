@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+}
+.logga {
+}
+.headertext {
+  font-size: 10vh;
+}
+.header {
+  width: 50vw;
+  display: flex;
+  justify-content: flex-start;
+}
+#gallery {
+  display: flex;
+  justify-content: center;
+  background: blue;
+  width: 100vw;
+}
+#gridcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 900px;
+  height: 900px;
+
+}
+.nav1 {
+  color: white;
+  font-size: 4vh;
+  text-decoration: none;
+  font-family: 'Lexend Deca', sans-serif;
+  margin: 15px;
+}
+.nav1:hover {
+  color: black;
+}
+.navcon {
+  margin: 0;
+  background: rgb(73, 187, 224);
+  text-align: center;
+}
+#lista {
+  font-size: 5vh;
+  font-weight: bold;
+}
+#frontpics {
+  text-align: center;
+  margin: 10px;
+}
