@@ -14,16 +14,54 @@ body {
 #gallery {
   display: flex;
   justify-content: center;
-  background: blue;
   width: 100vw;
+  margin-top: 15px;
 }
 #gridcontainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  width: 900px;
-  height: 900px;
-
+  width: 50vw;
+  height: 50vh;
+}
+#grid1 {
+  width: 18vw;
+  height: 18vh;
+}
+#grid2 {
+  width: 18vw;
+  height: 18vh;
+}
+#grid3 {
+  width: 18vw;
+  height: 18vh;
+}
+#grid4 {
+  width: 18vw;
+  height: 18vh;
+}
+#grid5 {
+  width: 18vw;
+  height: 18vh;
+}
+#grid6 {
+  width: 18vw;
+  height: 18vh;
+}
+#grid7 {
+  width: 18vw;
+  height: 18vh;
+}
+#grid8 {
+  width: 18vw;
+  height: 18vh;
+}
+#grid9 {
+  width: 18vw;
+  height: 18vh;
+}
+.items:hover {
+  opacity: 0.7;
 }
 .nav1 {
   color: white;
@@ -41,10 +79,35 @@ body {
   text-align: center;
 }
 #lista {
+  margin-left: 3%;
   font-size: 5vh;
-  font-weight: bold;
+  font-family: 'Lexend Deca', sans-serif;
+  font-family: 'Fredoka One', cursive;
 }
 #frontpics {
   text-align: center;
   margin: 10px;
+}
+.foot {
+  background:green;
+  padding-bottom: 20%;
+  margin-top: 10%;
+
+}
+#footcon {
+
+}
+.map {
+  position: absolute;
+  margin-left: 60%;
+  height: 40%;
+  width: 30%;
+}
+.socmedia {
+  display: flex;
+  align-items: center;
+}
+.icon {
+  height: 5vh;
+  width: 3vw;
 }
