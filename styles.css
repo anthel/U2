@@ -4,7 +4,7 @@ body {
 .logga {
 }
 .headertext {
-  font-size: 10vh;
+  font-size: 5vw;
 }
 .header {
   width: 50vw;
@@ -12,10 +12,8 @@ body {
   justify-content: flex-start;
 }
 #gallery {
-  display: flex;
-  justify-content: center;
-  width: 100vw;
-  margin-top: 15px;
+  margin-top: 5%;
+  margin-left: 20%;
 }
 #gridcontainer {
   display: grid;
@@ -68,7 +66,7 @@ body {
   font-size: 4vh;
   text-decoration: none;
   font-family: 'Lexend Deca', sans-serif;
-  margin: 15px;
+  margin: 3vw;
 }
 .nav1:hover {
   color: black;
@@ -78,36 +76,59 @@ body {
   background: rgb(73, 187, 224);
   text-align: center;
 }
-#lista {
-  margin-left: 3%;
-  font-size: 5vh;
-  font-family: 'Lexend Deca', sans-serif;
-  font-family: 'Fredoka One', cursive;
-}
 #frontpics {
-  text-align: center;
-  margin: 10px;
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+}
+#frontpics-text  {
+  display: flex;
+  height: 5vh;
+  width: 70vw;
+  margin-top: 0.5%;
+  margin-left: 13%;
+  justify-content: space-between;
 }
 .foot {
   background:green;
-  padding-bottom: 20%;
-  margin-top: 10%;
-
-}
-#footcon {
+  padding-top: 2%;
+  padding-bottom: 25%;
+  padding-left: 5%;
+  margin-top: 10%; 
 
 }
 .map {
   position: absolute;
-  margin-left: 60%;
   height: 40%;
   width: 30%;
+  margin-top: 1%;
 }
 .socmedia {
-  display: flex;
-  align-items: center;
+  justify-content: flex-end;
+
 }
 .icon {
   height: 5vh;
   width: 3vw;
+}
+#newsbox {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 5.6%;
+}
+.news {
+  width: 27.3vw;
+  height: 40vh;
+  border: 1px solid black;
+  padding: 1%;
+}
+#openhours {
+  margin-top: 2%;
+  margin-left: 5%;
+}
+.contactform {
+  margin-left: 5%;
+}
+.form-input {
+  display:block;
 }
