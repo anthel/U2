@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="sv">
   <head>
+    <title>Kontakta oss</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="styles.css">
@@ -8,27 +9,27 @@
   </head>
   <body>
       <header class="header">
-        <img class="logga" src="media/images/logga.jpg" alt="logo" title="logo" width=200 height=200>
+        <img class="logo" src="media/images/logga.jpg" alt="logo" title="logo" width=200 height=200>
         <h1 class="headertext">Idrottskliniken</h1>
       </header>
       <nav class="navcon">
         <a href="index.html" class="nav1">Hem</a>
         <a href="contact.html" class="nav1">Kontakt</a>
-        <a href="gallery.html" class="nav1">Utrustning</a>
-        <a href="hours.html" class="nav1">Öppettider</a>
+        <a href="weightplates.html" class="nav1">Utrustning</a>
+        <a href="openhours.html" class="nav1">Öppettider</a>
       </nav>
     <main>
       <div>
-        <h1 class="contactform">Kontakta oss genom formuläret nedan</h1></br>
+        <h1 class="contactform">Kontakta oss genom formuläret nedan</h1><br>
       </div>
       <div class="contactform">
         <form action="mailto:something@something.something" method="get">
-          <label class="form-input" style="font-size: 3vh;" for="name">Namn:</label>
-          <input required="required" type="text" name="name" maxlength="20"/>
-          <label class="form-input" style="font-size: 3vh;" for="email">Epost:</label>
-          <input required="required" type="email" name="email"/>
-          <label class="form-input" style="font-size: 3vh;" for="message">Meddelande</label>
-          <textarea  name="message" cols="40" rows="0">Skriv ditt meddelande här..</textarea></br>
+          <label class="form-input" style="font-size: 3vh;" for="form-name">Namn:</label>
+          <input id="form-name" required="required" type="text" name="name" maxlength="20"/>
+          <label class="form-input" style="font-size: 3vh;" for="form-email">Epost:</label>
+          <input id="form-email" required="required" type="email" name="email"/>
+          <label class="form-input" style="font-size: 3vh;" for="form-message">Meddelande</label>
+          <textarea id="form-message" name="message" cols="40" rows="3">Skriv ditt meddelande här..</textarea><br>
           <input type="submit" name="submit" value="Skicka"/>
         </form>
       </div>
@@ -42,7 +43,7 @@
         <a href="http://www.twitter.com/" target="_blank"><img class="icon" src="media/images/twitter.png" title="Twitter" alt="Twitter Icon"></a>
         <a href="http://www.instagram.com/" target="_blank"><img class="icon" src="media/images/instagram.png" title="Instagram" alt="Instagram Icon"></a>
       </div>
-      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2178.5893879932196!2d14.832532015768736!3d56.90442641005125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46572373f421209f%3A0x2cb31149d76dba73!2sIdrottskliniken%20Norremark!5e0!3m2!1ssv!2sse!4v1568037612155!5m2!1ssv!2sse" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2178.5893879932196!2d14.832532015768736!3d56.90442641005125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46572373f421209f%3A0x2cb31149d76dba73!2sIdrottskliniken%20Norremark!5e0!3m2!1ssv!2sse!4v1568037612155!5m2!1ssv!2sse" style="border:0;" allowfullscreen=""></iframe>
 
     </footer>
   </body>

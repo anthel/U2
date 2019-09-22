@@ -1,22 +1,16 @@
 body {
   margin: 0;
 }
-.logga {
-  width: 15vw;
-  height: 30vh;
-}
-.pics {
-  width: 33%;
-  height: 80%;
-}
 .headertext {
   font-size: 5vw;
 }
 .header {
-  width: 50vw;
+  width: 100%;
   display: flex;
   justify-content: flex-start;
 }
+/* Grid page */
+
 #gallery {
   margin-top: 5%;
   margin-left: 20%;
@@ -27,12 +21,48 @@ body {
   grid-template-rows: 1fr 1fr 1fr;
   width: 50vw;
   height: 50vh;
+  position: relative;
 }
+#gridcontainer > .item {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.item .itemName {
+  background: rgba(255, 255, 255, 0.6);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  text-shadow: 2px 0px 1px rgba(0, 0, 0, 0.6);
+  transition: 0.5s;
+}
+@media screen and (min-width: 768px) {
+  .item:hover .itemName {
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    font-size: 4vw;
+  }
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
-  .logga {
-    display: none;
+  
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .logocontainer {
+    position: relative;
+    left: 50%;
+  }
+
+  .logo {
+    height: 5%;
+    width: 5%;
+    position: absolute;
   }
   .newsbox {
     width: 100%;
@@ -41,18 +71,18 @@ body {
   .map {
     display: none;
   }
-  
+  /* Had to use !important to make the newsfeed use the full width of mobile screens */
   .news {
     width: 100% !important;
   }
-  #phone {
+  #desktopOnly {
     display: none;
   }
   .navcon {
     display: flex;
     flex-direction: column;
   }
-  .nav1 {
+ .nav1 { /* Makes the navigation bar pop out and be more visible in mobile screens */
     padding: 2px;
     border: 3px solid white;
   }
@@ -63,13 +93,14 @@ body {
     width: 100%;
     height: 100%;
   }
+  /* Again, had to use !important to make the grid images use the appropiate size in mobile screens */
   .items {
     width: 100% !important;
     height: 100% !important;
   }
-  .headertext {
+.headertext {
     font-size: 350%;
-  }
+}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -119,10 +150,8 @@ body {
   grid-template-rows: 1fr 1fr 1fr;
   width: 50vw;
   height: 50vh;
+  }
 }
-}
-
-
 #grid1 {
   width: 18vw;
   height: 18vh;
@@ -159,9 +188,8 @@ body {
   width: 18vw;
   height: 18vh;
 }
-.items:hover {
-  opacity: 0.7;
-}
+/* Navigation */
+
 .nav1 {
   color: white;
   font-size: 4vh;
@@ -177,42 +205,7 @@ body {
   background: rgb(73, 187, 224);
   text-align: center;
 }
-#frontpics {
-  display: flex;
-  justify-content: center;
-  margin-top: 1%;
-}
-.pictext  {
-  display: flex;
-  height: 5vh;
-  width: 70vw;
-  margin-top: 0.5%;
-  margin-left: 13%;
-  justify-content: space-between;
-}
-.foot {
-  position: relative;
-  background:green;
-  padding-top: 2%;
-  padding-left: 5%;
-  margin-top: 5%;
-
-}
-.contacts {
-  display: inline-block;
-  padding-bottom: 2%;
-}
-.map {
-  position: absolute;
-  height: 200px;
-  width: 30%;
-  margin-left: 40%;
-
-}
-.icon {
-  height: 5vh;
-  width: 3vw;
-}
+/* Startpage (news) */
 .newsbox {
   display: flex;
   flex-wrap: wrap;
@@ -224,13 +217,58 @@ body {
   border: 1px solid black;
   padding: 1%;
 }
+#frontpics {
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+}
+.pics { 
+  width: 33%;
+  height: 80%;
+}
+.pictext  {
+  display: flex;
+  height: 5vh;
+  width: 70vw;
+  margin-top: 0.5%;
+  margin-left: 13%;
+  justify-content: space-between;
+}
+.logo {
+  width: 15vw;
+  height: 30vh;
+}
+/* All page footer */
+.foot {
+  position: relative;
+  background:rgb(73, 187, 224);
+  padding-top: 2%;
+  padding-left: 5%;
+  margin-top: 5%;
+}
+.contacts {
+  display: inline-block;
+  padding-bottom: 2%;
+}
+.map {
+  position: absolute;
+  height: 200px;
+  width: 30%;
+  margin-left: 40%;
+}
+.icon {
+  height: 5vh;
+  width: 3vw;
+}
+/* Open hours page */
 #openhours {
   margin-top: 2%;
   margin-left: 5%;
 }
+/* Contact form page */
 .contactform {
   margin-left: 5%;
 }
 .form-input {
-  display:block;
+  display: block;
 }
